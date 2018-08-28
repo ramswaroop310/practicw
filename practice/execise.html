@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>title</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</header>
+<body>
+		
+	
+	
+	<h1>json data retrieving</h1>
+	<button id="btn"> fetch info from json</button>
+	<div id="animal-info">
+	</div>
+	
+	<div id="addnew">
+		<input type="text" id="id">
+		<input type="text" id="content">
+		<input type="button" value="Add" id="submit">
+	</div>
+<script>
+function writeToFile(d1, d2){
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var fh = fso.OpenTextFile("data.txt", 8, false, 0);
+    fh.WriteLine(d1 + ',' + d2);
+    fh.Close();
+}
+var submit = document.getElementById("submit");
+submit.onclick = function () {
+    var id      = document.getElementById("id").value;
+    var content = document.getElementById("content").value;
+    writeToFile(id, content);
+}
+</script> 
+
+	<script data-main="config" src="require.js"></script>
+	<script>
+	require(['config'], function(){
+require(['test']);
+require(['crypto-js']);
+	});
+	</script>
+	
+</body>
+</html>

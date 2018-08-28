@@ -1,0 +1,25 @@
+.block2{
+	height: 300px;
+	width: 400px;
+}
+.address{
+	float: left;
+	height: 50px;
+	width: 200px;
+border: 1px solid black;
+}
+.addressid{
+	height: 50px;
+	float: right;
+	margin-right: 250px;
+	width: 200px;
+	border: 1px solid black;
+	
+
+}
+#animal-info{
+	height: 200px;
+	width: 400px;
+	border: 1px solid black;
+	
+}
