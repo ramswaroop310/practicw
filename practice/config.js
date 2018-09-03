@@ -1,7 +1,13 @@
 requirejs.config({
     baseUrl : 'js',
     paths:{
-        test : 'test',
-        crypto : 'crypto-js'
+        crypto : 'crypto-js',
+        filesystem : 'file-system',
+        fs : 'fs',
+        utils : 'extend',
+        filesaver: 'FileSaver',
+        assert : 'assert'
+       
+        
     }
 });
